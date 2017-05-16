@@ -1,0 +1,22 @@
+[user]
+	name = Bruno Trecenti
+	email = bruno.lopestrecenti@gmail.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	sr = svn rebase
+	sc = svn dcommit
+	dc = diff --cached
+[color]
+	status = auto
+	diff = auto
+[core]
+	editor = /usr/bin/vim
+[push]
+	default = current
+
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
