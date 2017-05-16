@@ -6,3 +6,5 @@
 
 cp ./bash_profile $HOME/.bash_profile
 cp ./gitconfig $HOME/.gitconfig
+
+exit 0
