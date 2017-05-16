@@ -1,0 +1,16 @@
+cask_args appdir: '/Applications'
+
+tap 'homebrew/bundle'
+
+brew 'git'
+brew 'rbenv'
+brew 'nvm'
+brew 'openssh'
+brew 'autojump'
+brew 'bash-completion'
+brew 'lastpass-cli'
+
+cask 'atom'
+cask 'google-chrome'
+cask 'firefox'
+cask 'screenhero'
