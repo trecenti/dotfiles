@@ -1,0 +1,14 @@
+atom-beautify
+atom-erb
+busy-signal
+file-icons
+intentions
+language-docker
+language-groovy
+linter
+linter-eslint
+linter-flow
+linter-ui-default
+monokai
+pigments
+react
