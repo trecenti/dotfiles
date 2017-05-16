@@ -11,6 +11,7 @@ brew 'openssl'
 brew 'autojump'
 brew 'bash-completion'
 brew 'lastpass-cli'
+brew 'vim'
 
 cask 'atom'
 cask 'google-chrome'
