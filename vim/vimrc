@@ -81,8 +81,6 @@ filetype plugin indent on
 
 syntax enable
 
-colorscheme molokai
-
 " Filetypes overrides
 au BufRead,BufNew *.soy set ft=html
 au BufRead,BufNew *.coffee set ft=coffee
