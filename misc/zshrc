@@ -1,0 +1,46 @@
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export CLICOLOR=true
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWCOLORHINTS=1
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+autoload -U compinit && compinit
+zmodload -i zsh/complist
+fpath=(/usr/local/share/zsh/site-functions $fpath)
+
+[[ -s `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]] && . `brew --prefix`/etc/bash_completion.d/git-prompt.sh
+
+autoload -U colors && colors
+NEWLINE=$'\n'
+precmd() { eval '__git_ps1 "%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[cyan]%}%~%{$reset_color%}" "${NEWLINE}%{$fg[green]%}»%{$reset_color%} "' }
+
+export NVM_DIR="$HOME/.nvm"
+
+[[ -s /usr/local/opt/nvm/nvm.sh ]] && . "/usr/local/opt/nvm/nvm.sh"
+
+eval "$(rbenv init -)"
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+export EDITOR='vim'
+
+alias grep='grep --color=auto'
+alias ls='ls -G'
+alias ll='ls -la'
+alias g='git'
+alias gs='g st -sb'
+alias gl='g log --oneline'
+alias gg="git grep"
+alias gprom="g pull -r origin master"
+alias gbc="git branch 2> /dev/null | grep -e ^* | awk '{ print \$2 }' | pbcopy"
+alias be="bundle exec"
+
+# Docker Aliases
+alias cup='docker-compose up'
+alias cr='docker-compose run'
+alias c='docker-compose'
