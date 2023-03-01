@@ -7,7 +7,6 @@
 set -e
 
 (cd homebrew; sh -c ./install.sh; brew bundle)
-(cd atom; sh -c ./setup.sh)
 (cd terminal; sh -c ./setup.sh)
 (cd misc; sh -c ./setup.sh)
 (cd vim; sh -c ./setup.sh)
