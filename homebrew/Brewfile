@@ -1,34 +1,38 @@
 cask_args appdir: '/Applications'
 
-tap 'homebrew/bundle'
-
+# Git
 brew 'git'
 brew 'git-lfs'
-brew 'rbenv'
-brew 'nvm'
-brew 'yarn'
-brew 'openssh'
-brew 'openssl@1.1'
-brew 'autojump'
-brew 'bash'
-brew 'bash-completion'
-brew 'chamber'
-brew 'vim'
-brew 'mysql'
-brew 'ruby-build'
-brew 'nvm'
-brew 'rbenv'
+
+# Docker
 brew 'docker'
 
-cask 'atom'
+# sh & Terminal
+brew 'vim'
+brew 'openssh'
+brew 'openssl'
+brew 'bash'
+brew 'bash-completion'
+brew 'autojump'
+
+# Node
+brew 'nvm'
+brew 'yarn'
+
+# Ruby
+brew 'rbenv'
+brew 'ruby-build'
+
+# Code
 cask 'visual-studio-code'
-cask 'google-chrome'
+cask 'docker-desktop'
+
+# Web
 cask 'firefox'
+cask 'brave-browser'
+
+# Productivity
 cask 'spectacle'
-cask 'gpgtools'
-cask 'aws-vault'
-cask 'keybase'
+
+# Collaboration
 cask 'slack'
-cask 'docker'
-cask 'sequel-pro'
-cask '1password'
